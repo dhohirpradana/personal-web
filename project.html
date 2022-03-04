@@ -1,0 +1,124 @@
+<html>
+  <head>
+    <title>My Site</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container-main">
+      <nav id="navbar">
+        <div class="left-side">
+          <img src="assets/logo.png" alt="" />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="bold">My Project</li>
+          </ul>
+        </div>
+        <div class="right-side">
+          <a href="contact.html">Contact Me</a>
+        </div>
+      </nav>
+      <div class="container-content">
+        <h2>ADD MY PROJECT</h2>
+        <form>
+          <div>
+            <label for="input-name">Project Name</label>
+            <input class="input-contact" type="text" id="input-name" />
+          </div>
+          <div class="date">
+            <div>
+              <label for="input-start">Start Date</label>
+              <input class="input-contact" type="date" id="input-start" />
+            </div>
+            <div>
+              <label for="input-end">End Date</label>
+              <input class="input-contact" type="date" id="input-end" />
+            </div>
+          </div>
+          <div>
+            <label for="input-desc">Description</label>
+            <textarea
+              class="input-contact input-message"
+              id="input-desc"
+            ></textarea>
+          </div>
+          <div class="label-tech">
+            <label>Technologies</label>
+          </div>
+          <div class="technologies">
+            <div class="check-tech">
+              <input
+                class="techs"
+                value="0"
+                type="checkbox"
+                id="input-nodejs"
+              />
+              <label for="input-nodejs">Node Js</label>
+            </div>
+            <div class="check-tech">
+              <input
+                class="techs"
+                value="1"
+                type="checkbox"
+                id="input-next-js"
+              />
+              <label for="input-next-js">Next Js</label>
+            </div>
+            <div class="check-tech">
+              <input
+                class="techs"
+                value="2"
+                type="checkbox"
+                id="input-react-js"
+              />
+              <label for="input-react-js">React Js</label>
+            </div>
+            <div class="check-tech">
+              <input
+                class="techs"
+                value="3"
+                type="checkbox"
+                id="input-typescript"
+              />
+              <label for="input-typescript">TypeScript</label>
+            </div>
+          </div>
+          <div>
+            <label>
+              <div class="input-image">
+                <div class="txt-choose">
+                  <div>choose</div>
+                </div>
+                <div style="padding-left: 15px" id="file-name"></div>
+                <input
+                  type="file"
+                  style="display: none"
+                  id="file-image"
+                  onchange="fileImage()"
+                />
+                <div>
+                  <i id="social-in" class="fa fa-paperclip suffix"></i>
+                </div>
+              </div>
+            </label>
+          </div>
+          <button class="btn-submit" type="button" onclick="saveProject()">
+            submit
+          </button>
+        </form>
+        <div class="container-projects">
+          <h2>MY PROJECT</h2>
+          <div class="list-project" id="list-project"></div>
+        </div>
+      </div>
+    </div>
+    <script src="projects.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container-main">
+      <nav id="navbar">
+        <div class="left-side">
+          <img src="assets/logo.png" alt="" />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">My Project</a></li>
+          </ul>
+        </div>
+        <div class="right-side">
+          <a href="#">Contact Me</a>
+        </div>
+      </nav>
+      <div class="container-content">
+        <h2 class="heading-text">GET IN TOUCH</h2>
+        <form action="" ;>
+          <div>
+            <label for="input-name">Name</label>
+            <input class="input-contact" type="text" id="input-name" />
+          </div>
+          <div>
+            <label for="input-email">Email</label>
+            <input class="input-contact" type="email" id="input-email" />
+          </div>
+          <div>
+            <label for="input-phone">Phone Number</label>
+            <input class="input-contact" type="text" id="input-phone" />
+          </div>
+          <div>
+            <label for="select-subject">Subject</label>
+            <select class="input-contact select-subject" id="select-subject">
+              <option hidden></option>
+              <option>We're Hiring</option>
+              <option>Let's Collaboration</option>
+              <option>Let's Talk</option>
+            </select>
+          </div>
+          <div>
+            <label for="input-message">Your Message</label>
+            <textarea
+              class="input-contact input-message"
+              id="input-message"
+            ></textarea>
+          </div>
+          <button class="btn-submit" type="button" onclick="submitForm()">
+            submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
