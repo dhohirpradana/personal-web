@@ -4,11 +4,11 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 0; /* Remove scrollbar space */
-  background: transparent; /* Optional: just make scrollbar invisible */
+  width: 0; /*! Remove scrollbar space */
+  background: transparent; /*! Optional: just make scrollbar invisible */
 }
 
-/* Optional: show position indicator in red */
+/*! Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
   background: #ff0000;
 }
@@ -26,7 +26,7 @@ body {
 }
 
 nav {
-  z-index:1;
+  z-index: 1;
   background-color: rgb(243, 239, 239);
   display: flex;
   padding-left: 5vw;
@@ -34,14 +34,14 @@ nav {
   height: 55px;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+/*! The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
   top: 0;
   width: 90vw;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+/*! Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .container-content {
   padding-top: 60px;
 }
@@ -105,6 +105,15 @@ nav .right-side a {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.title-project-detail {
+  font-size: 24px;
+  font-weight: 800;
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 
 .container-content form .col-2 {
@@ -208,7 +217,7 @@ nav .right-side a {
   font-size: 1.5vw;
 }
 
-/* Contact */
+/*! Contact */
 
 form {
   width: 35%;
@@ -260,7 +269,7 @@ label {
   letter-spacing: 1px;
 }
 
-/* My Project */
+/*! My Project */
 
 .date {
   display: flex;
@@ -328,6 +337,7 @@ input[type="checkbox"] {
 }
 
 .input-image .suffix {
+  color: rgb(10, 10, 10, 0.8);
   font-size: 24px;
   margin-right: 15px;
   position: absolute;
@@ -429,4 +439,76 @@ input[type="checkbox"] {
   color: white;
   justify-content: center;
   background-color: rgb(28, 28, 49);
+}
+
+/*! Project Detail */
+
+.project-detail {
+  /* border: solid greenyellow; */
+  margin: auto;
+  width: 80vw;
+  justify-content: center;
+}
+
+/*! Left */
+
+.project-detail .col-1 {
+  display: flex;
+}
+
+.project-detail .col-1 .left-side {
+  width: 50%;
+  margin-right: 35px;
+}
+
+.project-detail .col-1 .left-side img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/*! Right */
+
+.project-detail .col-1 .right-side {
+  width: 40%;
+}
+
+.project-detail .col-1 .right-side .col-item {
+  margin-bottom: 25px;
+}
+
+.project-detail .col-1 .right-side label {
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+
+/*! img icon */
+.project-detail .col-1 .right-side img {
+  width: 24px;
+  margin-left: -1px;
+  margin-right: 10px;
+}
+
+.project-detail .col-1 .right-side .items {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(80, 80, 80);
+  margin-bottom: 12px;
+}
+
+.project-detail .col-1 .technologies {
+  display: flex;
+}
+
+.project-detail .col-1 .technologies .tech {
+  width: 13vw;
+}
+
+.project-detail .col-2 {
+  margin-top: 30px;
+  margin-bottom: 7vh;
+  text-align: justify;
+  font-size: 12px;
 }
