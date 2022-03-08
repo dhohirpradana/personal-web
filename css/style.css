@@ -457,12 +457,12 @@ input[type="checkbox"] {
 }
 
 .project-detail .col-1 .left-side {
-  width: 50%;
+  width: 50vw;
   margin-right: 35px;
 }
 
 .project-detail .col-1 .left-side img {
-  width: 100%;
+  width: 50vw;
   object-fit: cover;
 }
 
