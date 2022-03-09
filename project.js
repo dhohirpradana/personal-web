@@ -83,7 +83,7 @@ function saveProject() {
       ? DateDiff.inDays(dateStart, dateEnd) + " hari"
       : DateDiff.inMonths(dateStart, dateEnd) + " bulan";
   let techSelected = [...document.querySelectorAll(".techs:checked")].map(
-    (e) => techIcons[e.value.split("_").pop()]
+    (e) => techIcons[e.value]
   );
   let desc = document.getElementById("input-desc").value;
 

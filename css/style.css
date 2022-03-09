@@ -394,11 +394,13 @@ input[type="checkbox"] {
 .container-projects .card .description {
   font-size: 14px;
   font-weight: 500;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   color: rgba(5, 5, 5, 0.9);
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
+  line-height: 1.5em;
+  min-height: 4.5em;
   -webkit-line-clamp: 3; /* number of lines to show */
   line-clamp: 3;
   -webkit-box-orient: vertical;
