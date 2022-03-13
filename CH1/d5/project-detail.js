@@ -81,7 +81,7 @@ function renderProject() {
   );
 
   var dateEnd = new Date(
-    "Tue Jun 23 2022 09:57:08 GMT+0700 (Waktu Indonesia Barat)"
+    "Tue Jun   2022 09:57:08 GMT+0700 (Waktu Indonesia Barat)"
   );
 
   let diff =
@@ -117,7 +117,7 @@ function renderProject() {
       </div>
       <div class="right-side">
         <div class="col-item">
-          <div class="items">
+          <div class="items"> 
             <label>Duration</label>
           </div>
           <div class="items">

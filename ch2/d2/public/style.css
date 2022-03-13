@@ -1,17 +1,17 @@
-html {
+/* html {
   overflow: scroll;
   overflow-x: hidden;
-}
+} */
 
-::-webkit-scrollbar {
-  width: 0; /*! Remove scrollbar space */
-  background: transparent; /*! Optional: just make scrollbar invisible */
-}
+/* ::-webkit-scrollbar { */
+  /* width: 0; ! Remove scrollbar space */
+  /* background: transparent; ! Optional: just make scrollbar invisible */
+/* } */
 
 /*! Optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
   background: #ff0000;
-}
+} */
 
 body {
   background-color: #e1e5e9;
@@ -94,7 +94,7 @@ nav .right-side a {
 }
 
 .container-content {
-  padding-top: 3.5vh;
+  margin-top: 3.5vh;
   /* display: flex;
   justify-content: center;
   align-items: center; */
@@ -347,25 +347,41 @@ input[type="checkbox"] {
 }
 
 .container-projects {
+  margin: auto;
+  margin-top: 10vh;
   padding-top: 3vh;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(247, 247, 247);
 }
 
 .container-projects .list-project {
-  padding: 20px 14.2vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  /* border: solid greenyellow; */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: auto;
+  display: grid;
+}
+@media (min-width: 600px) {
+  .container-projects .list-project {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-projects .list-project {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
 }
 
 .container-projects .card {
+  width: 19rem;
   cursor: pointer;
   display: inline;
   height: max-content;
-  flex: 0 0 300px;
   border-radius: 7px;
   padding: 15px;
-  margin: 0 15px;
+  margin: 0 2rem;
   margin-bottom: 7vh;
   border-radius: 7px;
   box-shadow: 0px 4px 11px -1px rgba(0, 0, 0, 0.35);
@@ -374,8 +390,8 @@ input[type="checkbox"] {
 }
 
 .container-projects .card img {
-  width: 300px;
-  height: 200px;
+  width: 19rem;
+  height: 13rem;
   object-fit: cover;
   border-radius: 7px;
   margin-bottom: 15px;
@@ -421,6 +437,7 @@ input[type="checkbox"] {
 }
 
 .container-projects .card .btn-action .edit {
+  text-decoration: none !important;
   margin-right: 2.5px;
   padding: 2px;
   padding-bottom: 5px;
@@ -433,6 +450,7 @@ input[type="checkbox"] {
 }
 
 .container-projects .card .btn-action .delete {
+  text-decoration: none !important;
   margin-left: 2.5px;
   padding: 2px;
   padding-bottom: 5px;
